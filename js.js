@@ -77,7 +77,7 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart= ParseInt(prompt(inserisci numero));
+let totalShoppingCart= ParseInt(prompt(Number));
     const shippingCost= 10;
 
         if (totalShoppingCart<50){
