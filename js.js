@@ -52,6 +52,14 @@ for (let i=0;i<11;i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+for(let top=0; top<=15;top++){
+    if(top %2===0) {
+        console.log("pari");
+    } else {
+        console.log("dispari");
+    }
+    console.log(top);
+}
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
