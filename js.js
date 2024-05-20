@@ -37,7 +37,16 @@ let esercizio2=  prompt("inserisci numero");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+for (let i=0;i<11;i++) {
+    if(i===3) {
+        continue
+    } if (i===8){
+        continue
+    }
+    console.log(i);
+}
 
+   
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
