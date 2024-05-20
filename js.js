@@ -77,7 +77,17 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO EXTRA 3
+let totalShoppingCart= ParseInt(prompt(inserisci numero));
+    const shippingCost= 10;
+
+        if (totalShoppingCart<50){
+            console.log (totalShoppingCart+shippingCost);
+        } else {
+            console.log (totalShoppingCart)
+        }
+
+
+ /*   
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
