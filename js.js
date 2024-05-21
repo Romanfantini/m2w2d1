@@ -1,8 +1,17 @@
+
 //ESERCIZI SUGLI IF: 
 
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
+let a = prompt("first number");
+let b = prompt("second number");
+
+if (a<b){
+    console.log(a)
+}else {
+    console.log(b)
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -52,13 +61,13 @@ for (let i=0;i<11;i++) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-for(let top=0; top<=15;top++){
-    if(top %2===0) {
-        console.log("pari");
+for(let i=0; i<=15;i++){
+    if(i %2===0) {
+        console.log((i),"pari");
     } else {
-        console.log("dispari");
+        console.log((i),"dispari");
     }
-    console.log(top);
+    
 }
 
 //ESERCIZI EXTRA NON OBBLIGATORI
@@ -66,6 +75,17 @@ for(let top=0; top<=15;top++){
 /* ESERCIZIO EXTRA 1
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+function  verifica(number1,number2){
+    if(number1 === 8 || number2===8){
+        console.log("uno dei 2 valori è 8");
+    }
+    
+    if((number1 + number2 ===8) || (number1 - number2 ===8)){
+        console.log("FA 8");
+    }
+}
+
+verifica(4, 8);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -77,21 +97,51 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart= ParseInt(prompt(Number));
-    const shippingCost= 10;
 
-        if (totalShoppingCart<50){
-            console.log (totalShoppingCart+shippingCost);
-        } else {
-            console.log (totalShoppingCart)
+let totalShoppingCart= Number(prompt("total cart"));
+const shippingCost= 10;
+    if(totalShoppingCart<=50){
+        console.log(shippingCost + totalShoppingCart)
+    } else {
+        console.log(totalShoppingCart)
+    }
+
+
+/** let totaleCarrello= 49;
+
+function calcolaTotale(totaleCarrello) {
+        let costoSpedizione= 10;
+        let prezzoFinale;
+
+        if(totaleCarrello>50) {
+            costoSpedizione=0;
         }
+       prezzoFinale= totaleCarrello + costoSpedizione;
+       return prezzoFinale;
+}
 
-
+console.log("il totale speso è " + calcolaTotale(totaleCarello));**/
  /*   
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
+let totaleCarrello = 49;
 
+function calcolaTotale(totaleCarrello) {
+        const scontoBlackFriday = 0.8;
+        let costoSpedizione= 10;
+
+        let prezzoFinale;
+        let prezzoScontato
+        prezzoScontato= totaleCarrello * scontoBlackFriday;
+        if(totaleCarrello>50) {
+            costoSpedizione=0;
+        }
+       prezzoFinale= totaleCarrello + costoSpedizione;
+       return prezzoFinale;
+}
+
+console.log("il totale speso è " + calcolaTotale(totaleCarello));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /*  ESERCIZIO EXTRA 4
@@ -99,7 +149,11 @@ let totalShoppingCart= ParseInt(prompt(Number));
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
+let isMale = true;
 
+let gender = isMale ? "male" : "female";
+
+console.log(gender);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO EXTRA 5
